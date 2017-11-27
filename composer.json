@@ -1,0 +1,24 @@
+{
+  "name": "bhusalb/elasticsearch-sync-mysql",
+  "description": "A package for synchronizing Mysql and Elasticsearch",
+  "keywords": [
+    "framework",
+    "laravel"
+  ],
+  "license": "MIT",
+  "type": "project",
+  "require": {
+    "elasticsearch/elasticsearch": "^6.0"
+  },
+  "authors": [
+    {
+      "name": "Bishnu Bhusal",
+      "email": "bishnu.bhusal111@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Bhusalb\\": "src/"
+    }
+  }
+}
