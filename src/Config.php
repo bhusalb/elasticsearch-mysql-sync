@@ -27,6 +27,10 @@ class Config
 
     public $elasticSearchHosts = ['localhost'];
 
+    public $dateTimeField = [];
+
+    public $sqlParameter = [];
+
     public function __construct($config = [])
     {
         foreach ($config as $property => $value)

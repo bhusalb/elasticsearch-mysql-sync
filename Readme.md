@@ -1,7 +1,8 @@
 # Elasticsearch Mysql Sync 
 --------------------------
 ## features
-- use php
+- Incremental Update Support
+
 
 
 

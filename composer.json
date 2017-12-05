@@ -8,7 +8,8 @@
   "license": "MIT",
   "type": "project",
   "require": {
-    "elasticsearch/elasticsearch": "^6.0"
+    "elasticsearch/elasticsearch": "^6.0",
+    "violet/streaming-json-encoder": "^1.1"
   },
   "authors": [
     {
@@ -18,7 +19,11 @@
   ],
   "autoload": {
     "psr-4": {
-      "Bhusalb\\": "src/"
+      "Bhusalb\\": "src/",
+      "Bhusalb\\Tests\\": "tests/"
     }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.4"
   }
 }

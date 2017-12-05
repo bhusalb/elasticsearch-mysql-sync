@@ -14,8 +14,8 @@ class StateFile
 
         $this->path = $path;
 
-        if (file_exists($this->path)) {
-            $this->data = json_decode(file_get_contents($this->path));
+        if (is_file($this->path)) {
+            $this->data = json_decode(file_get_contents($this->path),true);
             if (!(json_last_error() === JSON_ERROR_NONE))
                 throw new InvalidStateFileException();
         } else
@@ -29,6 +29,6 @@ class StateFile
 
     public function overwrite($data)
     {
-        file_put_contents($this->path, $data);
+        file_put_contents($this->path, json_encode($data));
     }
 }
